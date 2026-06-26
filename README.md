@@ -1,4 +1,22 @@
-# Project Walkthrough
+
+## Overview
+
+Designed and configured a simulated enterprise firewall to secure a segmented network by creating firewall rules for DNS, Web, Email, Database, and VoIP traffic. Implemented Stateful Packet Inspection (SPI), monitored live firewall logs, and validated the configuration through simulated attack scenarios to ensure only authorized traffic was allowed.
+
+**Skills Demonstrated**
+
+- Firewall Administration
+- Network Security
+- TCP/IP
+- Firewall Rule Configuration
+- Stateful Packet Inspection (SPI)
+- Traffic Filtering
+- DNS
+- Network Monitoring
+- Firewall Logging
+- Security Validation
+
+---
 
 ## 1. Configured Enterprise Firewall Rules
 
