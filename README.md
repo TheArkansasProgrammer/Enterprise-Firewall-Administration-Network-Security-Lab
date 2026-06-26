@@ -2,98 +2,66 @@
 
 ## 1. Configured Enterprise Firewall Rules
 
-Created firewall rules to allow only approved network services while enforcing a default-deny security policy. Rules were configured for DNS, Web, Email, Database, and VoIP traffic, with Stateful Packet Inspection (SPI) enabled to securely manage established connections.
+Configured firewall rules to allow only approved network services while enforcing a default-deny security policy. Rules were created for DNS, Web, Email, Database, and VoIP traffic.
 
-**Skills Demonstrated**
+**Image:**
 
-- Firewall Rule Configuration
-- Access Control
-- Stateful Packet Inspection (SPI)
-- Network Security
-
-![Firewall Rules](images/all-active-rules.png)
-
+<img width="727" height="281" alt="All Active Rules" src="https://github.com/user-attachments/assets/52ab9905-ea50-4b29-a03b-be7249354fea" />
 ---
 
-## 2. Configured DNS Firewall Rule
+## 2. Created Individual DNS Firewall Rule
 
-Created a dedicated firewall rule allowing DNS queries over **UDP Port 53**. This allows internal systems to resolve domain names while preventing unauthorized DNS traffic.
+Configured a dedicated firewall rule allowing DNS traffic over **UDP Port 53**, ensuring clients could resolve domain names while blocking unauthorized DNS requests.
 
-**Skills Demonstrated**
+**Image:**
 
-- DNS
-- UDP
-- Port-Based Access Control
-- Firewall Administration
-
-![DNS Rule](images/dns-rule.png)
-
+<img width="522" height="310" alt="All 5 Rules" src="https://github.com/user-attachments/assets/d2ab106b-5497-4c18-9aac-e7d70405c482" />
 ---
 
 ## 3. Validated Legitimate Network Traffic
 
-Verified that approved network traffic successfully traversed the firewall. Live firewall logs confirmed that DNS, HTTP, Email, Database, and VoIP communications were permitted according to the configured security policies.
+Verified that approved traffic successfully traversed the firewall. Live firewall logs confirmed DNS, Web, Email, Database, and VoIP communications were functioning as expected.
 
-Examples observed:
+**Image:**
 
-- DNS (UDP 53)
-- HTTP (TCP 80)
-- Email (TCP 25)
-- Database (TCP 3306)
-- VoIP Traffic
-
-![Traffic Validation](images/firewall-pass.png)
-
+<img width="724" height="431" alt="FireWall Pass" src="https://github.com/user-attachments/assets/c0e57dec-9aa0-4fa8-a666-82dabce905fc" />
 ---
 
-## 4. Verified Firewall Traffic Flow
+## 4. Observed Real-Time Network Traffic
 
-Observed real-time traffic moving through the protected network while the firewall filtered communications between internal networks and the Internet. Legitimate traffic continued normally while firewall policies remained enforced.
+Monitored live network traffic flowing between internal devices and the Internet while firewall policies remained enforced.
 
-**Skills Demonstrated**
+This visualization confirms that approved traffic continued through the firewall without interruption.
 
-- Network Monitoring
-- Traffic Analysis
-- Firewall Logging
-- Enterprise Network Security
+**Image:**
 
-![Traffic Flow](images/good-traffic.png)
-
+<img width="215" height="403" alt="Good Traffic" src="https://github.com/user-attachments/assets/b47168ae-a7d1-4a9d-8cc0-26e518637a86" />
 ---
 
 ## 5. Tested Firewall Against Simulated Attacks
 
-Executed multiple simulated attack scenarios to verify that the firewall detected and blocked unauthorized traffic before it could reach internal systems.
+Executed simulated attack scenarios to verify that the firewall detected and blocked unauthorized traffic before it reached internal systems.
 
-Examples included:
+**Image:**
 
-- Operating System Exploits
-- Unauthorized Connections
-- Malicious Traffic
-- External Attack Attempts
-
-![Attack Simulation](images/attacks-failing.png)
-
+<img width="716" height="425" alt="Attacks Failing" src="https://github.com/user-attachments/assets/85f778db-46b5-4240-825f-b04c820281c4" />
 ---
 
 ## 6. Final Security Validation
 
-Performed a final validation of the completed firewall configuration. The firewall successfully blocked simulated attacks while continuing to allow legitimate network communications.
+Performed a final validation of the firewall configuration. All configured firewall rules successfully protected the network while allowing legitimate communications.
 
-**Validation Results**
+**Image:**
 
-✅ DNS Allowed
+<img width="363" height="393" alt="Zero Attack Go Through" src="https://github.com/user-attachments/assets/36e9b6a6-9d94-406e-930e-744b4b7e64a4" />
+---
 
-✅ Web Traffic Allowed
+## Optional Screenshot
 
-✅ Database Traffic Allowed
+This screenshot demonstrates the firewall successfully blocking multiple attack attempts after all firewall rules were configured.
 
-✅ Email Allowed
+**Image:**
 
-✅ VoIP Allowed
+<img width="950" height="575" alt="Attacks Failing ALL RULES" src="https://github.com/user-attachments/assets/998482fd-3b3b-4d66-979a-7d065b37abb0" />
+---
 
-✅ Unauthorized Traffic Blocked
-
-✅ Simulated Attacks Prevented
-
-![Final Validation](images/zero-attack-go-through.png)
